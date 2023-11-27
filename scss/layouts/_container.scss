@@ -2,5 +2,9 @@
     width: 100%;
     max-width: 1288px;
     margin: 0 auto;
-    padding: 24px;
+    padding: 20px;
+
+    @media screen and (min-width:$br-desctop) {
+        padding: 24px;
+    }
 }

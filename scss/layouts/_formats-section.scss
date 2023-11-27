@@ -10,9 +10,13 @@
     }
 
     &__title {
-        margin-bottom: 80px;
+        margin-bottom: 24px;
         text-align: center;
         color: var(--color-primary-dark);
+
+        @media screen and (min-width: $br-tablet) {
+            margin-bottom: 80px;
+        }
     }
 
     &__list {

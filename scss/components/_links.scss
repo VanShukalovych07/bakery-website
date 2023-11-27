@@ -3,8 +3,14 @@
   color: var(--color-primary-light);
   text-decoration: none;
   transition: color 0.3s;
-}
+  max-width: 178px;
+  margin-bottom: 16px;
 
-.link:hover {
-  color: var(--color-brand-normal);
+  @media screen and (min-width:$br-tablet) {
+    max-width: 211px;
+  }
+
+  &:hover {
+    color: var(--color-brand-normal);
+  }
 }

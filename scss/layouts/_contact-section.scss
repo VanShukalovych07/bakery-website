@@ -2,11 +2,12 @@
     &__container {
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 24px;
         max-width: 1240px;
 
         @media screen and (min-width:$br-tablet) {
             flex-direction: row;
+            gap: 32px;
         }
     }
 
@@ -14,12 +15,13 @@
         flex-shrink: 0;
         border: none;
         border-radius: 16px;
-        margin: 0 -24px;
+        margin: 0 -24px -44px -24px;
         height: 176px;
 
         @media screen and (min-width:$br-tablet) {
-            width: 320px;
+            width: 385px;
             height: 500px;
+            margin: 0;
         }
 
         @media screen and (min-width:$br-desctop) {
@@ -29,8 +31,14 @@
     }
 
     &__title {
-        margin-bottom: 16px;
+        margin-bottom: 8px;
         font-weight: 900;
+        text-align: center;
+
+        @media screen and (min-width:$br-tablet) {
+            text-align: left;
+            margin-bottom: 16px;
+        }
     }
 
     &__field {
@@ -40,14 +48,25 @@
     &__btn {
         display: flex;
         justify-content: center;
-        margin: 0 auto 16px;
+        margin: 0 auto;
+
+        @media screen and (min-width:$br-tablet) {
+            margin: 0 auto 16px;
+        }
     }
 
     &__text {
         color: var(--color-brand-dark);
         margin-bottom: 72px;
-        font-size: 18px;
+        font-size: 14px;
         text-align: left;
-        margin: 0px 0px 42px 0px;
+        margin: 0px 0px 24px 0px;
+        text-align: center;
+
+        @media screen and (min-width:$br-tablet) {
+            text-align: left;
+            font-size: 18px;
+            margin: 0px 0px 42px 0px;
+        }
     }
 }

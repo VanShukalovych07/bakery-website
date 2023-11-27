@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="./css/main.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
 <body>
   <header class="header">
@@ -30,13 +30,25 @@
         </svg>
       </button>
       <div class="mobile-menu">
-        <button type="button" class="mobile-menu__btn-close menu-btn-close">close</button>
+        <button type="button" class="mobile-menu__btn-close menu-btn-close"></button>
+        <div class="mobile-menu__container">
+          <nav class="mobile-menu__nav">
+            <a class="mobile-menu__logo" href="./index.html"></a>
+            <ul class="mobile-menu__menu">
+              <li><a class="mobile-menu__link menu-link" href="#traditions-section">Наші традиції</a></li>
+              <li><a class="mobile-menu__link menu-link" href="#cooker-section">Шеф-кухарі</a></li>
+              <li><a class="mobile-menu__link menu-link" href="#format-section">Формати</a></li>
+              <li><a class="mobile-menu__link menu-link" href="#contact-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <img class="mobile-menu__group" src="./images/mobile-group.png" alt="bread and text mobile">
+        </div>
       </div>
     </div>
   </header>
   <main>
     <section class="hero-section"> <!-- 1 -->
-      <div class="container">
+      <div class="hero-section__container ">
         <h1 class="hero-section__title"> <span class="text-brand">Сучасна</span> пекарня</h1>
       </div>
       <button type="button" class="hero-section__button modal-btn-open">Замовити дзвінок</button>
@@ -84,9 +96,9 @@
               <div>
                 <h3 class="chef-card__title">Настя</h3>
                 <p class="chef-card__text"> Привіт, я Настя!</p>
-                <p class="chef-card__text">Вже 10 років, я втілюю<br>
+                <p class="chef-card__text">Вже 10 років, я втілюю
                   у життя цікаві та смачні ідеї.</p>
-                <p class="chef-card__text">Я випічу для вас <br>
+                <p class="chef-card__text">Я випічу для вас
                   найсмачніщі вироби!</p>
 
               </div>
@@ -121,7 +133,7 @@
               <use href="./images/icons.svg#icon-Arrow-1"> </use>
             </svg>
           </button>
-          <div class="formats-section__container swiper-container">
+          <div class="formats-section__container swiper mySwiper">
             <ul class="formats-section__list swiper-wrapper">
               <li class="swiper-slide">
                 <article class="format-card">
@@ -338,7 +350,7 @@
       </form>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/formats-slider.js"></script>
   <script src="./js/moblie-menu.js"></script>
   <script src="./js/modal.js"></script>
