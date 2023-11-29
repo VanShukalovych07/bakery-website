@@ -9,7 +9,7 @@
     transition: transform 1s;
     z-index: 2;
 
-    @media screen and (min-width: $br-tablet) {
+    @media screen and (min-width: $br-desctop) {
         display: none;
     }
 
